@@ -13,11 +13,18 @@
     "@emailjs/browser": "^4.3.3",
     "@react-three/drei": "^9.105.6",
     "@react-three/fiber": "^8.16.6",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.3.3",
     "framer-motion": "^11.2.4",
     "maath": "^0.10.7",
     "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
+    "react-bootstrap-icons": "^1.11.4",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.1"
+    "react-multi-carousel": "^2.8.5",
+    "react-on-screen": "^2.1.1",
+    "react-router-dom": "^6.23.1",
+    "react-router-hash-link": "^2.4.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
