@@ -1,35 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { BrowserRouter } from "react-router-dom";
 
-function App() {
-  const [count, setCount] = useState(0)
+import { Banner, NavBar } from "./components";
 
+import "./App.css";
+
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <BrowserRouter>
+      <div className="relative z-0 bg-gradient-to-l from-gradient_initial via-gradient_final to-gradient_initial">
+        <div className="relative z-0">
+          <NavBar />
+          <Banner />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+      <iframe
+        id="funding"
+        title="¡Estudiantes del departamento del Cesar en Alemania!"
+        width="100%"
+        height="410"
+        src="https://vaki.co/iframe/lQBstsOFMgAKebhQdCYO"
+        className="bg-gradient-to-l from-gradient_initial via-gradient_final to-gradient_initial"
+      ></iframe>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
